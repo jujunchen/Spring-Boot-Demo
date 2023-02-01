@@ -5,6 +5,9 @@ spring:
     url: jdbc:mysql://localhost:3306/spring-boot-demo?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&nullCatalogMeansCurrent=true
     username: root
     password: 123456
+#  5.1.3 自定义横幅
+#  main:
+#    banner-mode: off
 # 4.8.3 自动重启 -> 记录条件评估中的变化
 # 对自动配置的影响评估
 #  devtools:
