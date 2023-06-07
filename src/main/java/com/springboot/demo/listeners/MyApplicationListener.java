@@ -5,6 +5,7 @@ import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.core.annotation.Order;
 
+
 @Slf4j
 @Order(-100)
 public class MyApplicationListener implements ApplicationListener<ApplicationStartedEvent> {
