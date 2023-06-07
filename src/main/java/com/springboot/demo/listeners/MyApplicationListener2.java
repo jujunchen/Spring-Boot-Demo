@@ -19,7 +19,7 @@ public class MyApplicationListener2 {
         log.info("应用启动完成");
     }
 
-    @EventListener({ApplicationEnvironmentPreparedEvent.class})
+    @EventListener({ApplicationEnvironmentPreparedEvent.class,ApplicationPreparedEvent.class})
     public void listenerApplicationEnv() {
         //实际测试，没有监听到，后面说明原理
         log.info("监听到了环境准备完成事件");
