@@ -1,4 +1,4 @@
-#org.springframework.context.ApplicationListener=com.springboot.demo.listeners.MyApplicationListener
+org.springframework.context.ApplicationListener=com.springboot.demo.listeners.MyApplicationListener
 #org.springframework.boot.SpringApplicationRunListener=com.springboot.demo.listeners.MyApplicationRunListener
 #org.springframework.context.ApplicationContextInitializer=com.springboot.demo.initializer.MyInitializer
 #org.springframework.boot.env.EnvironmentPostProcessor=com.springboot.demo.initializer.MyEnvironmentPostProcessor
