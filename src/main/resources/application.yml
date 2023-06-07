@@ -5,6 +5,10 @@ spring:
     username: root
     password: 123456
 
-context:
-  initializer:
-    classes: com.springboot.demo.initializer.MyInitializer3
+#context:
+#  initializer:
+#    classes: com.springboot.demo.initializer.MyInitializer3
+
+#context:
+#  listener:
+#    classes: com.springboot.demo.listeners.MyApplicationListener

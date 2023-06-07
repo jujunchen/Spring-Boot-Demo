@@ -2,6 +2,7 @@ package com.springboot.demo;
 
 import com.springboot.demo.hook.MyApplicationHook;
 import com.springboot.demo.initializer.MyInitializer2;
+import com.springboot.demo.listeners.MyApplicationListener;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,7 +19,8 @@ public class SpringBootDemoApplication {
         //是否记录应用程序启动信息
 //        springApplication.setLogStartupInfo(false);
         //设置ApplicationHook
-        springApplication.addInitializers(new MyInitializer2());
+//        springApplication.addInitializers(new MyInitializer2());
+//        springApplication.addListeners(new MyApplicationListener());
         springApplication.run(args);
     }
 
