@@ -1,4 +1,10 @@
 spring:
+  main:
+    banner-mode: log
+  #已经不支持图片banner
+#  banner:
+#    image:
+#      location: classpath:banner.png
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:./spring-boot-demo
@@ -12,3 +18,7 @@ spring:
 #context:
 #  listener:
 #    classes: com.springboot.demo.listeners.MyApplicationListener
+
+logging:
+  file:
+    path: log

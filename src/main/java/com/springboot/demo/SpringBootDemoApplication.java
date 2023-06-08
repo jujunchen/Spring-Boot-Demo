@@ -1,5 +1,6 @@
 package com.springboot.demo;
 
+import com.springboot.demo.banner.CustomBanner;
 import com.springboot.demo.hook.MyApplicationHook;
 import com.springboot.demo.initializer.MyInitializer2;
 import com.springboot.demo.listeners.MyApplicationListener;
@@ -21,6 +22,8 @@ public class SpringBootDemoApplication {
         //设置ApplicationHook
 //        springApplication.addInitializers(new MyInitializer2());
 //        springApplication.addListeners(new MyApplicationListener());
+        //banner
+        springApplication.setBanner(new CustomBanner());
         springApplication.run(args);
     }
 
