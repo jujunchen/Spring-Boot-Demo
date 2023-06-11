@@ -1,6 +1,9 @@
 spring:
+  output:
+    ansi:
+      enabled: always
   main:
-    banner-mode: log
+    banner-mode: console
   #已经不支持图片banner
 #  banner:
 #    image:
