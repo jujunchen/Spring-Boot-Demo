@@ -1,0 +1,8 @@
+me: 333333
+
+# 加载后不生效，已经晚了
+#spring:
+#  main:
+#    output:
+#      ansi:
+#        enabled: always

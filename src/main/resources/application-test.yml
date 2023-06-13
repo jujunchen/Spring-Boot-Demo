@@ -1,0 +1,6 @@
+me: ${random.int}
+java:
+  version: 1.8
+
+server:
+  port:

@@ -1,9 +1,14 @@
 spring:
+  profiles:
+    active:
+      - test
+  main:
+    banner-mode: log
   output:
     ansi:
       enabled: always
-  main:
-    banner-mode: console
+#  banner:
+#    location: classpath:static/banner.txt
   #已经不支持图片banner
 #  banner:
 #    image:
@@ -25,3 +30,5 @@ spring:
 logging:
   file:
     path: log
+
+me: 4444

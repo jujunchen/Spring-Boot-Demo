@@ -7,10 +7,13 @@ import com.springboot.demo.listeners.MyApplicationListener;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
 import javax.swing.*;
+import java.util.Properties;
 
 @SpringBootApplication
+@PropertySource("classpath:app.yml")
 public class SpringBootDemoApplication {
 
     public static void main(String[] args) throws Exception {
@@ -24,6 +27,11 @@ public class SpringBootDemoApplication {
 //        springApplication.addListeners(new MyApplicationListener());
         //banner
         springApplication.setBanner(new CustomBanner());
+        //SpringApplication.setDefaultProperties 指定的默认属性
+        Properties properties = new Properties();
+        properties.setProperty("me", "123456");
+        springApplication.setDefaultProperties(properties);
+
         springApplication.run(args);
     }
 

@@ -29,11 +29,14 @@ public class MyApplicationRunListener implements SpringApplicationRunListener {
     @Override
     public void contextLoaded(ConfigurableApplicationContext context) {
         System.out.println("上下文准备完毕，未刷新");
+//        System.out.println(context.getEnvironment().getProperty("me"));
     }
 
     @Override
     public void started(ConfigurableApplicationContext context, Duration timeTaken) {
         System.out.println("上下文已刷新，应用程序已启动，但尚未调用CommandLineRunners和ApplicationRunners");
+        System.out.println(context.getEnvironment().getProperty("me"));
+        System.out.println(context.getEnvironment().getProperty("java.version"));
     }
 
     @Override
