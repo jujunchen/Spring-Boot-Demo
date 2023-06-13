@@ -1,0 +1,1336 @@
+2023-06-13T10:46:11.615+08:00  INFO 22125 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T10:46:11.672+08:00  INFO 22125 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 22125 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T10:46:11.673+08:00  INFO 22125 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T10:46:11.702+08:00  INFO 22125 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T10:46:11.702+08:00  INFO 22125 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T10:46:12.364+08:00  INFO 22125 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T10:46:12.373+08:00  INFO 22125 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T10:46:12.373+08:00  INFO 22125 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T10:46:12.432+08:00  INFO 22125 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T10:46:12.432+08:00  INFO 22125 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 730 ms
+2023-06-13T10:46:12.451+08:00  INFO 22125 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T10:46:12.601+08:00  INFO 22125 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T10:46:12.602+08:00  INFO 22125 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T10:46:12.617+08:00  INFO 22125 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T10:46:12.890+08:00  INFO 22125 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T10:46:12.909+08:00  INFO 22125 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T10:46:12.915+08:00  INFO 22125 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.566 seconds (process running for 1.981)
+2023-06-13T10:46:12.915+08:00  INFO 22125 --- [restartedMain] c.s.d.listeners.MyApplicationListener2   : 应用启动完成
+2023-06-13T10:46:12.916+08:00  INFO 22125 --- [restartedMain] c.s.d.listeners.MyApplicationListener2   : 监听到了多个事件
+2023-06-13T10:46:12.917+08:00  INFO 22125 --- [restartedMain] c.s.d.listeners.MyApplicationListener2   : 监听到了多个事件
+2023-06-13T10:46:30.783+08:00  INFO 22125 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T10:46:30.786+08:00  INFO 22125 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T10:46:33.165+08:00  INFO 22138 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T10:46:33.217+08:00  INFO 22138 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 22138 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T10:46:33.218+08:00  INFO 22138 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T10:46:33.244+08:00  INFO 22138 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T10:46:33.244+08:00  INFO 22138 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T10:46:33.848+08:00  INFO 22138 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T10:46:33.855+08:00  INFO 22138 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T10:46:33.855+08:00  INFO 22138 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T10:46:33.899+08:00  INFO 22138 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T10:46:33.899+08:00  INFO 22138 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 655 ms
+2023-06-13T10:46:33.915+08:00  INFO 22138 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T10:46:34.038+08:00  INFO 22138 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T10:46:34.038+08:00  INFO 22138 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T10:46:34.051+08:00  INFO 22138 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T10:46:34.288+08:00  INFO 22138 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T10:46:34.305+08:00  INFO 22138 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T10:46:34.311+08:00  INFO 22138 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.416 seconds (process running for 1.701)
+2023-06-13T10:46:39.596+08:00  INFO 22138 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T10:46:39.600+08:00  INFO 22138 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T10:54:47.425+08:00  INFO 22188 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T10:54:47.469+08:00  INFO 22188 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 22188 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T10:54:47.470+08:00  INFO 22188 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T10:54:47.496+08:00  INFO 22188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T10:54:47.497+08:00  INFO 22188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T10:54:48.105+08:00  INFO 22188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T10:54:48.118+08:00  INFO 22188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T10:54:48.118+08:00  INFO 22188 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T10:54:48.155+08:00  INFO 22188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T10:54:48.155+08:00  INFO 22188 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 658 ms
+2023-06-13T10:54:48.177+08:00  INFO 22188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T10:54:48.323+08:00  INFO 22188 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T10:54:48.324+08:00  INFO 22188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T10:54:48.332+08:00  INFO 22188 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T10:54:48.576+08:00  INFO 22188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T10:54:48.592+08:00  INFO 22188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T10:54:48.599+08:00  INFO 22188 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.445 seconds (process running for 1.736)
+2023-06-13T10:56:48.203+08:00  INFO 22188 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T10:56:48.205+08:00  INFO 22188 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T10:56:50.662+08:00  INFO 22205 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T10:56:50.694+08:00  INFO 22205 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 22205 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T10:56:50.700+08:00  INFO 22205 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T10:56:50.726+08:00  INFO 22205 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T10:56:50.726+08:00  INFO 22205 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T10:56:51.318+08:00  INFO 22205 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T10:56:51.324+08:00  INFO 22205 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T10:56:51.325+08:00  INFO 22205 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T10:56:51.361+08:00  INFO 22205 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T10:56:51.361+08:00  INFO 22205 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 635 ms
+2023-06-13T10:56:51.382+08:00  INFO 22205 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T10:56:51.506+08:00  INFO 22205 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T10:56:51.507+08:00  INFO 22205 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T10:56:51.515+08:00  INFO 22205 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T10:56:51.741+08:00  INFO 22205 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T10:56:51.757+08:00  INFO 22205 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T10:56:51.762+08:00  INFO 22205 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.332 seconds (process running for 1.64)
+2023-06-13T12:47:32.229+08:00  WARN 22205 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s385ms).
+2023-06-13T12:53:30.805+08:00  WARN 22205 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s561ms).
+2023-06-13T12:57:32.530+08:00  WARN 22205 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m1s724ms).
+2023-06-13T13:03:30.772+08:00  WARN 22205 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s235ms).
+2023-06-13T13:11:11.777+08:00  INFO 22205 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:11:11.779+08:00  INFO 22205 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:12:55.632+08:00  INFO 23265 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T13:12:55.674+08:00  INFO 23265 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23265 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:12:55.675+08:00  INFO 23265 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:12:55.703+08:00  INFO 23265 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:12:55.703+08:00  INFO 23265 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:12:56.399+08:00  INFO 23265 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:12:56.406+08:00  INFO 23265 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:12:56.407+08:00  INFO 23265 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:12:56.450+08:00  INFO 23265 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:12:56.450+08:00  INFO 23265 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
+2023-06-13T13:12:56.473+08:00  INFO 23265 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:12:56.621+08:00  INFO 23265 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:12:56.622+08:00  INFO 23265 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:12:56.629+08:00  INFO 23265 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:12:56.869+08:00  INFO 23265 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:12:56.888+08:00  INFO 23265 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:12:56.894+08:00  INFO 23265 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.616 seconds (process running for 1.969)
+2023-06-13T13:17:46.917+08:00  INFO 23265 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:17:46.919+08:00  INFO 23265 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:17:49.891+08:00  INFO 23380 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T13:17:49.924+08:00  INFO 23380 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23380 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:17:49.924+08:00  INFO 23380 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:17:49.955+08:00  INFO 23380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:17:49.956+08:00  INFO 23380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:17:50.556+08:00  INFO 23380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:17:50.563+08:00  INFO 23380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:17:50.564+08:00  INFO 23380 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:17:50.599+08:00  INFO 23380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:17:50.600+08:00  INFO 23380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 644 ms
+2023-06-13T13:17:50.628+08:00  INFO 23380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:17:50.751+08:00  INFO 23380 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:17:50.752+08:00  INFO 23380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:17:50.760+08:00  INFO 23380 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:17:51.004+08:00  INFO 23380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:17:51.021+08:00  INFO 23380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:17:51.026+08:00  INFO 23380 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.373 seconds (process running for 1.68)
+2023-06-13T13:23:17.350+08:00  INFO 23380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:23:17.352+08:00  INFO 23380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:23:20.139+08:00  INFO 23412 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T13:23:20.188+08:00  INFO 23412 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23412 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:23:20.189+08:00  INFO 23412 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:23:20.227+08:00  INFO 23412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:23:20.227+08:00  INFO 23412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:23:20.943+08:00  INFO 23412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:23:20.953+08:00  INFO 23412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:23:20.954+08:00  INFO 23412 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:23:20.998+08:00  INFO 23412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:23:20.998+08:00  INFO 23412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2023-06-13T13:23:21.024+08:00  INFO 23412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:23:21.184+08:00  INFO 23412 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:23:21.185+08:00  INFO 23412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:23:21.197+08:00  INFO 23412 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:23:21.467+08:00  INFO 23412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:23:21.486+08:00  INFO 23412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:23:21.498+08:00  INFO 23412 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.67 seconds (process running for 2.071)
+2023-06-13T13:28:03.696+08:00  INFO 23412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:28:03.698+08:00  INFO 23412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:28:06.111+08:00  INFO 23487 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T13:28:06.147+08:00  INFO 23487 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23487 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:28:06.147+08:00  INFO 23487 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:28:06.174+08:00  INFO 23487 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:28:06.174+08:00  INFO 23487 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:28:06.772+08:00  INFO 23487 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:28:06.779+08:00  INFO 23487 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:28:06.779+08:00  INFO 23487 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:28:06.818+08:00  INFO 23487 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:28:06.818+08:00  INFO 23487 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 643 ms
+2023-06-13T13:28:06.841+08:00  INFO 23487 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:28:06.963+08:00  INFO 23487 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:28:06.964+08:00  INFO 23487 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:28:06.971+08:00  INFO 23487 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:28:07.209+08:00  INFO 23487 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:28:07.226+08:00  INFO 23487 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:28:07.232+08:00  INFO 23487 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.357 seconds (process running for 1.666)
+2023-06-13T13:34:57.284+08:00  INFO 23487 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:34:57.286+08:00  INFO 23487 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:34:59.638+08:00  INFO 23555 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T13:34:59.677+08:00  INFO 23555 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23555 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:34:59.677+08:00  INFO 23555 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:34:59.703+08:00  INFO 23555 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:34:59.703+08:00  INFO 23555 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:35:00.307+08:00  INFO 23555 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:35:00.315+08:00  INFO 23555 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:35:00.315+08:00  INFO 23555 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:35:00.359+08:00  INFO 23555 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:35:00.359+08:00  INFO 23555 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 656 ms
+2023-06-13T13:35:00.375+08:00  INFO 23555 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:35:00.504+08:00  INFO 23555 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:35:00.505+08:00  INFO 23555 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:35:00.519+08:00  INFO 23555 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:35:00.761+08:00  INFO 23555 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:35:00.779+08:00  INFO 23555 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:35:00.784+08:00  INFO 23555 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.438 seconds (process running for 1.751)
+2023-06-13T13:37:35.645+08:00  INFO 23555 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:37:35.647+08:00  INFO 23555 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:37:38.114+08:00  INFO 23569 --- [restartedMain] o.s.boot.SpringApplication               : 
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+
+::Spring Boot Version:  (v3.1.0)
+::Application Version: 
+
+custom: ${key}
+
+2023-06-13T13:37:38.152+08:00  INFO 23569 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23569 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:37:38.153+08:00  INFO 23569 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:37:38.179+08:00  INFO 23569 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:37:38.180+08:00  INFO 23569 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:37:38.782+08:00  INFO 23569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:37:38.789+08:00  INFO 23569 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:37:38.790+08:00  INFO 23569 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:37:38.827+08:00  INFO 23569 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:37:38.827+08:00  INFO 23569 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
+2023-06-13T13:37:38.850+08:00  INFO 23569 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:37:38.980+08:00  INFO 23569 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:37:38.981+08:00  INFO 23569 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:37:38.991+08:00  INFO 23569 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:37:39.230+08:00  INFO 23569 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:37:39.246+08:00  INFO 23569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:37:39.252+08:00  INFO 23569 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.382 seconds (process running for 1.686)
+2023-06-13T13:37:50.262+08:00  INFO 23569 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:37:50.266+08:00  INFO 23569 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:37:51.947+08:00  INFO 23572 --- [restartedMain] o.s.boot.SpringApplication               : 
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+
+::Spring Boot Version:  (v3.1.0)
+::Application Version: 
+
+custom: ${key}
+
+2023-06-13T13:37:51.994+08:00  INFO 23572 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23572 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:37:51.994+08:00  INFO 23572 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:37:52.020+08:00  INFO 23572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:37:52.020+08:00  INFO 23572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:37:52.626+08:00  INFO 23572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:37:52.632+08:00  INFO 23572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:37:52.632+08:00  INFO 23572 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:37:52.667+08:00  INFO 23572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:37:52.667+08:00  INFO 23572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2023-06-13T13:37:52.692+08:00  INFO 23572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:37:52.823+08:00  INFO 23572 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:37:52.824+08:00  INFO 23572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:37:52.831+08:00  INFO 23572 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:37:53.064+08:00  INFO 23572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:37:53.081+08:00  INFO 23572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:37:53.087+08:00  INFO 23572 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.404 seconds (process running for 1.708)
+2023-06-13T13:38:51.915+08:00  INFO 23572 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:38:51.917+08:00  INFO 23572 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T13:38:53.620+08:00  INFO 23577 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T13:38:53.661+08:00  INFO 23577 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23577 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T13:38:53.663+08:00  INFO 23577 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T13:38:53.700+08:00  INFO 23577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T13:38:53.700+08:00  INFO 23577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T13:38:54.300+08:00  INFO 23577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T13:38:54.307+08:00  INFO 23577 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T13:38:54.307+08:00  INFO 23577 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T13:38:54.342+08:00  INFO 23577 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T13:38:54.342+08:00  INFO 23577 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 641 ms
+2023-06-13T13:38:54.363+08:00  INFO 23577 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T13:38:54.485+08:00  INFO 23577 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T13:38:54.486+08:00  INFO 23577 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T13:38:54.494+08:00  INFO 23577 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T13:38:54.745+08:00  INFO 23577 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T13:38:54.761+08:00  INFO 23577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T13:38:54.767+08:00  INFO 23577 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.419 seconds (process running for 1.719)
+2023-06-13T13:50:45.093+08:00  INFO 23577 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T13:50:45.099+08:00  INFO 23577 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T14:09:15.831+08:00  INFO 23933 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T14:09:15.874+08:00  INFO 23933 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23933 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T14:09:15.874+08:00  INFO 23933 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T14:09:15.900+08:00  INFO 23933 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T14:09:15.900+08:00  INFO 23933 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T14:09:16.501+08:00  INFO 23933 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T14:09:16.509+08:00  INFO 23933 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T14:09:16.509+08:00  INFO 23933 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T14:09:16.545+08:00  INFO 23933 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T14:09:16.546+08:00  INFO 23933 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2023-06-13T14:09:16.569+08:00  INFO 23933 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T14:09:16.706+08:00  INFO 23933 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T14:09:16.707+08:00  INFO 23933 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T14:09:16.717+08:00  INFO 23933 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T14:09:16.961+08:00  INFO 23933 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T14:09:16.978+08:00  INFO 23933 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T14:09:16.984+08:00  INFO 23933 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.421 seconds (process running for 1.737)
+2023-06-13T14:11:45.726+08:00  INFO 23933 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T14:11:45.731+08:00  INFO 23933 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T14:11:47.451+08:00  INFO 23983 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T14:11:47.495+08:00  INFO 23983 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 23983 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T14:11:47.496+08:00  INFO 23983 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-06-13T14:11:47.525+08:00  INFO 23983 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T14:11:47.525+08:00  INFO 23983 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T14:11:48.128+08:00  INFO 23983 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T14:11:48.134+08:00  INFO 23983 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T14:11:48.134+08:00  INFO 23983 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T14:11:48.169+08:00  INFO 23983 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T14:11:48.170+08:00  INFO 23983 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 645 ms
+2023-06-13T14:11:48.192+08:00  INFO 23983 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T14:11:48.318+08:00  INFO 23983 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T14:11:48.319+08:00  INFO 23983 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T14:11:48.326+08:00  INFO 23983 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T14:11:48.569+08:00  INFO 23983 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T14:11:48.586+08:00  INFO 23983 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T14:11:48.592+08:00  INFO 23983 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.436 seconds (process running for 1.727)
+2023-06-13T14:12:39.260+08:00  INFO 23983 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T14:12:39.262+08:00  INFO 23983 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T14:12:41.496+08:00  INFO 24016 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T14:12:41.532+08:00  INFO 24016 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 24016 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T14:12:41.533+08:00  INFO 24016 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T14:12:41.559+08:00  INFO 24016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T14:12:41.559+08:00  INFO 24016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T14:12:42.162+08:00  INFO 24016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T14:12:42.169+08:00  INFO 24016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T14:12:42.169+08:00  INFO 24016 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T14:12:42.206+08:00  INFO 24016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T14:12:42.206+08:00  INFO 24016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
+2023-06-13T14:12:42.232+08:00  INFO 24016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T14:12:42.355+08:00  INFO 24016 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T14:12:42.356+08:00  INFO 24016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T14:12:42.363+08:00  INFO 24016 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T14:12:42.601+08:00  INFO 24016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T14:12:42.618+08:00  INFO 24016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T14:12:42.625+08:00  INFO 24016 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.396 seconds (process running for 1.692)
+2023-06-13T14:15:37.306+08:00  INFO 24016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T14:15:37.308+08:00  INFO 24016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T14:28:49.239+08:00  INFO 24472 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T14:28:49.288+08:00  INFO 24472 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 24472 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T14:28:49.290+08:00  INFO 24472 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T14:28:49.322+08:00  INFO 24472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T14:28:49.322+08:00  INFO 24472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T14:28:49.983+08:00  INFO 24472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T14:28:49.991+08:00  INFO 24472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T14:28:49.991+08:00  INFO 24472 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T14:28:50.030+08:00  INFO 24472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T14:28:50.030+08:00  INFO 24472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 707 ms
+2023-06-13T14:28:50.057+08:00  INFO 24472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T14:28:50.199+08:00  INFO 24472 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T14:28:50.200+08:00  INFO 24472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T14:28:50.208+08:00  INFO 24472 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T14:28:50.450+08:00  INFO 24472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T14:28:50.461+08:00  WARN 24472 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-06-13T14:28:50.462+08:00  INFO 24472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T14:28:50.644+08:00  INFO 24472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T14:28:50.646+08:00  INFO 24472 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-13T14:28:50.654+08:00  INFO 24472 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-13T14:28:50.664+08:00 ERROR 24472 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-06-13T14:47:35.061+08:00  INFO 24851 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T14:47:35.106+08:00  INFO 24851 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 24851 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T14:47:35.107+08:00  INFO 24851 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T14:47:35.135+08:00  INFO 24851 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T14:47:35.135+08:00  INFO 24851 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T14:47:35.787+08:00  INFO 24851 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T14:47:35.795+08:00  INFO 24851 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T14:47:35.795+08:00  INFO 24851 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T14:47:35.844+08:00  INFO 24851 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T14:47:35.844+08:00  INFO 24851 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 709 ms
+2023-06-13T14:47:35.864+08:00  INFO 24851 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T14:47:36.009+08:00  INFO 24851 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T14:47:36.010+08:00  INFO 24851 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T14:47:36.024+08:00  INFO 24851 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T14:47:36.257+08:00  INFO 24851 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T14:47:36.268+08:00  WARN 24851 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-06-13T14:47:36.270+08:00  INFO 24851 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T14:47:36.315+08:00  INFO 24851 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T14:47:36.317+08:00  INFO 24851 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-13T14:47:36.326+08:00  INFO 24851 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-13T14:47:36.336+08:00 ERROR 24851 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-06-13T15:12:52.330+08:00  INFO 25609 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:12:52.375+08:00  INFO 25609 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 25609 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:12:52.376+08:00  INFO 25609 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:12:52.412+08:00  INFO 25609 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T15:12:52.412+08:00  INFO 25609 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T15:12:53.126+08:00  INFO 25609 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:12:53.134+08:00  INFO 25609 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:12:53.134+08:00  INFO 25609 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:12:53.175+08:00  INFO 25609 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:12:53.175+08:00  INFO 25609 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2023-06-13T15:12:53.199+08:00  INFO 25609 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T15:12:53.343+08:00  INFO 25609 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:12:53.345+08:00  INFO 25609 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T15:12:53.353+08:00  INFO 25609 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:12:53.598+08:00  INFO 25609 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:12:53.615+08:00  INFO 25609 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:12:53.622+08:00  INFO 25609 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.67 seconds (process running for 2.256)
+2023-06-13T15:13:02.705+08:00  INFO 25609 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T15:13:02.707+08:00  INFO 25609 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T15:24:17.840+08:00  INFO 25825 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:24:17.895+08:00  INFO 25825 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 25825 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:24:17.897+08:00  INFO 25825 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:24:17.934+08:00  INFO 25825 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T15:24:17.934+08:00  INFO 25825 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T15:24:18.744+08:00  INFO 25825 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:24:18.754+08:00  INFO 25825 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:24:18.757+08:00  INFO 25825 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:24:18.807+08:00  INFO 25825 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:24:18.807+08:00  INFO 25825 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 872 ms
+2023-06-13T15:24:18.833+08:00  INFO 25825 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T15:24:18.990+08:00  INFO 25825 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:24:18.991+08:00  INFO 25825 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T15:24:19.004+08:00  INFO 25825 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:24:19.327+08:00  INFO 25825 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:24:19.346+08:00  INFO 25825 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:24:19.352+08:00  INFO 25825 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.916 seconds (process running for 2.39)
+2023-06-13T15:24:19.354+08:00  INFO 25825 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-13T15:24:19.369+08:00 ERROR 25825 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: Could not resolve placeholder 'env.me' in value "${env.me}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552) ~[spring-core-6.0.9.jar:6.0.9]
+	at com.springboot.demo.listeners.MyApplicationRunListener.started(MyApplicationRunListener.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) ~[spring-boot-3.1.0.jar:3.1.0]
+	at com.springboot.demo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.1.0.jar:3.1.0]
+
+2023-06-13T15:24:19.393+08:00  INFO 25825 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T15:24:19.477+08:00  INFO 25825 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T15:30:46.085+08:00  INFO 25967 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:30:46.130+08:00  INFO 25967 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 25967 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:30:46.131+08:00  INFO 25967 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:30:46.158+08:00  INFO 25967 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T15:30:46.158+08:00  INFO 25967 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T15:30:46.811+08:00  INFO 25967 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:30:46.818+08:00  INFO 25967 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:30:46.818+08:00  INFO 25967 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:30:46.855+08:00  INFO 25967 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:30:46.856+08:00  INFO 25967 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 698 ms
+2023-06-13T15:30:46.880+08:00  INFO 25967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T15:30:47.018+08:00  INFO 25967 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:30:47.019+08:00  INFO 25967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T15:30:47.027+08:00  INFO 25967 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:30:47.267+08:00  INFO 25967 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:30:47.283+08:00  INFO 25967 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:30:47.289+08:00  INFO 25967 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.492 seconds (process running for 1.851)
+2023-06-13T15:30:47.291+08:00  INFO 25967 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-13T15:30:47.305+08:00 ERROR 25967 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: Circular placeholder reference 'me' in property definitions
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:168) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552) ~[spring-core-6.0.9.jar:6.0.9]
+	at com.springboot.demo.listeners.MyApplicationRunListener.started(MyApplicationRunListener.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) ~[spring-boot-3.1.0.jar:3.1.0]
+	at com.springboot.demo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.1.0.jar:3.1.0]
+
+2023-06-13T15:30:47.331+08:00  INFO 25967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T15:30:47.505+08:00  INFO 25967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T15:30:57.178+08:00  INFO 25976 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:30:57.219+08:00  INFO 25976 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 25976 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:30:57.219+08:00  INFO 25976 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:30:57.251+08:00  INFO 25976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T15:30:57.251+08:00  INFO 25976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T15:30:57.871+08:00  INFO 25976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:30:57.879+08:00  INFO 25976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:30:57.879+08:00  INFO 25976 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:30:57.915+08:00  INFO 25976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:30:57.915+08:00  INFO 25976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 664 ms
+2023-06-13T15:30:57.937+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T15:30:58.063+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:30:58.064+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T15:30:58.071+08:00  INFO 25976 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:30:58.308+08:00  INFO 25976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:30:58.324+08:00  INFO 25976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:30:58.330+08:00  INFO 25976 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.442 seconds (process running for 1.736)
+2023-06-13T15:31:41.126+08:00  INFO 25976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-13T15:31:41.142+08:00  INFO 25976 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-13T15:31:41.153+08:00  INFO 25976 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T15:31:41.350+08:00  INFO 25976 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T15:31:41.394+08:00  INFO 25976 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:31:41.395+08:00  INFO 25976 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 25976 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:31:41.395+08:00  INFO 25976 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:31:41.513+08:00  INFO 25976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:31:41.514+08:00  INFO 25976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:31:41.514+08:00  INFO 25976 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:31:41.520+08:00  INFO 25976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:31:41.521+08:00  INFO 25976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 124 ms
+2023-06-13T15:31:41.526+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-06-13T15:31:41.529+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:31:41.530+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-06-13T15:31:41.530+08:00  INFO 25976 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:31:41.578+08:00  INFO 25976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:31:41.581+08:00  INFO 25976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:31:41.583+08:00  INFO 25976 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 0.204 seconds (process running for 44.989)
+2023-06-13T15:31:41.584+08:00  INFO 25976 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-13T15:31:41.595+08:00 ERROR 25976 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: Circular placeholder reference 'me' in property definitions
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:168) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552) ~[spring-core-6.0.9.jar:6.0.9]
+	at com.springboot.demo.listeners.MyApplicationRunListener.started(MyApplicationRunListener.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) ~[spring-boot-3.1.0.jar:3.1.0]
+	at com.springboot.demo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.1.0.jar:3.1.0]
+
+2023-06-13T15:31:41.601+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-06-13T15:31:41.749+08:00  INFO 25976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-06-13T15:38:50.370+08:00  INFO 26211 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:38:50.416+08:00  INFO 26211 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 26211 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:38:50.417+08:00  INFO 26211 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:38:50.445+08:00  INFO 26211 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T15:38:50.445+08:00  INFO 26211 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T15:38:51.089+08:00  INFO 26211 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:38:51.096+08:00  INFO 26211 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:38:51.096+08:00  INFO 26211 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:38:51.131+08:00  INFO 26211 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:38:51.132+08:00  INFO 26211 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 686 ms
+2023-06-13T15:38:51.155+08:00  INFO 26211 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T15:38:51.290+08:00  INFO 26211 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:38:51.291+08:00  INFO 26211 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T15:38:51.299+08:00  INFO 26211 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:38:51.539+08:00  INFO 26211 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:38:51.556+08:00  INFO 26211 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:38:51.562+08:00  INFO 26211 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.506 seconds (process running for 1.873)
+2023-06-13T15:38:51.564+08:00  INFO 26211 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-13T15:38:51.574+08:00 ERROR 26211 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: Circular placeholder reference 'me' in property definitions
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:168) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552) ~[spring-core-6.0.9.jar:6.0.9]
+	at com.springboot.demo.listeners.MyApplicationRunListener.started(MyApplicationRunListener.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) ~[spring-boot-3.1.0.jar:3.1.0]
+	at com.springboot.demo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.1.0.jar:3.1.0]
+
+2023-06-13T15:38:51.599+08:00  INFO 26211 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T15:38:51.623+08:00  INFO 26211 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T15:45:50.041+08:00  INFO 26296 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:45:50.086+08:00  INFO 26296 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 26296 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:45:50.087+08:00  INFO 26296 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:45:50.116+08:00  INFO 26296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T15:45:50.116+08:00  INFO 26296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T15:45:50.763+08:00  INFO 26296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:45:50.770+08:00  INFO 26296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:45:50.771+08:00  INFO 26296 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:45:50.810+08:00  INFO 26296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:45:50.810+08:00  INFO 26296 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 694 ms
+2023-06-13T15:45:50.831+08:00  INFO 26296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T15:45:50.966+08:00  INFO 26296 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:45:50.967+08:00  INFO 26296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T15:45:50.976+08:00  INFO 26296 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:45:51.213+08:00  INFO 26296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:45:51.231+08:00  INFO 26296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:45:51.238+08:00  INFO 26296 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.487 seconds (process running for 1.804)
+2023-06-13T15:45:51.240+08:00  INFO 26296 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-13T15:45:51.254+08:00 ERROR 26296 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: Circular placeholder reference 'me' in property definitions
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:168) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-6.0.9.jar:6.0.9]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552) ~[spring-core-6.0.9.jar:6.0.9]
+	at com.springboot.demo.listeners.MyApplicationRunListener.started(MyApplicationRunListener.java:38) ~[classes/:na]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) ~[spring-boot-3.1.0.jar:3.1.0]
+	at com.springboot.demo.SpringBootDemoApplication.main(SpringBootDemoApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.1.0.jar:3.1.0]
+
+2023-06-13T15:45:51.274+08:00  INFO 26296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T15:45:51.455+08:00  INFO 26296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T15:46:05.684+08:00  INFO 26316 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T15:46:05.731+08:00  INFO 26316 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 26316 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T15:46:05.732+08:00  INFO 26316 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T15:46:05.768+08:00  INFO 26316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T15:46:05.768+08:00  INFO 26316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T15:46:06.439+08:00  INFO 26316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T15:46:06.446+08:00  INFO 26316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T15:46:06.446+08:00  INFO 26316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T15:46:06.488+08:00  INFO 26316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T15:46:06.488+08:00  INFO 26316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 720 ms
+2023-06-13T15:46:06.511+08:00  INFO 26316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T15:46:06.648+08:00  INFO 26316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T15:46:06.650+08:00  INFO 26316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T15:46:06.658+08:00  INFO 26316 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T15:46:06.895+08:00  INFO 26316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T15:46:06.912+08:00  INFO 26316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T15:46:06.918+08:00  INFO 26316 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.522 seconds (process running for 1.87)
+2023-06-13T16:56:30.831+08:00  INFO 26316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T16:56:30.835+08:00  INFO 26316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T16:58:27.763+08:00  INFO 27597 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T16:58:27.798+08:00  INFO 27597 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 27597 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T16:58:27.799+08:00  INFO 27597 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T16:58:27.825+08:00  INFO 27597 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T16:58:27.826+08:00  INFO 27597 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T16:58:28.477+08:00  INFO 27597 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T16:58:28.484+08:00  INFO 27597 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T16:58:28.485+08:00  INFO 27597 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T16:58:28.528+08:00  INFO 27597 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T16:58:28.529+08:00  INFO 27597 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 703 ms
+2023-06-13T16:58:28.546+08:00  INFO 27597 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T16:58:28.686+08:00  INFO 27597 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T16:58:28.687+08:00  INFO 27597 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T16:58:28.700+08:00  INFO 27597 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T16:58:28.926+08:00  INFO 27597 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T16:58:28.942+08:00  INFO 27597 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T16:58:28.951+08:00  INFO 27597 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.588 seconds (process running for 1.955)
+2023-06-13T16:58:41.084+08:00  INFO 27597 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T16:58:41.086+08:00  INFO 27597 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T17:00:58.890+08:00  INFO 27657 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:00:58.927+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 27657 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:00:58.927+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T17:00:58.953+08:00  INFO 27657 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T17:00:58.953+08:00  INFO 27657 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T17:00:59.618+08:00  INFO 27657 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T17:00:59.624+08:00  INFO 27657 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T17:00:59.625+08:00  INFO 27657 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T17:00:59.665+08:00  INFO 27657 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T17:00:59.665+08:00  INFO 27657 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 712 ms
+2023-06-13T17:00:59.683+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T17:00:59.823+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T17:00:59.824+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T17:00:59.839+08:00  INFO 27657 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T17:01:00.064+08:00  INFO 27657 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T17:01:00.085+08:00  INFO 27657 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T17:01:00.095+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.604 seconds (process running for 1.928)
+2023-06-13T17:09:28.098+08:00  INFO 27657 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 21 class path changes (0 additions, 14 deletions, 7 modifications)
+2023-06-13T17:09:28.118+08:00  INFO 27657 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-13T17:09:28.137+08:00  INFO 27657 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T17:09:28.279+08:00  INFO 27657 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T17:09:28.338+08:00  INFO 27657 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:09:28.339+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 27657 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:09:28.339+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T17:09:28.482+08:00  INFO 27657 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T17:09:28.482+08:00  INFO 27657 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T17:09:28.482+08:00  INFO 27657 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T17:09:28.487+08:00  INFO 27657 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T17:09:28.487+08:00  INFO 27657 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2023-06-13T17:09:28.496+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-06-13T17:09:28.501+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T17:09:28.501+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-06-13T17:09:28.501+08:00  INFO 27657 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T17:09:28.568+08:00  INFO 27657 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T17:09:28.572+08:00  INFO 27657 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T17:09:28.574+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 0.257 seconds (process running for 510.442)
+2023-06-13T17:09:28.575+08:00  INFO 27657 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-13T17:09:29.985+08:00  INFO 27657 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (14 additions, 0 deletions, 0 modifications)
+2023-06-13T17:09:29.990+08:00  INFO 27657 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-13T17:09:29.993+08:00  INFO 27657 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-06-13T17:09:30.149+08:00  INFO 27657 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-06-13T17:09:30.196+08:00  INFO 27657 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:09:30.197+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 27657 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:09:30.197+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T17:09:30.280+08:00  INFO 27657 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T17:09:30.280+08:00  INFO 27657 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T17:09:30.280+08:00  INFO 27657 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T17:09:30.286+08:00  INFO 27657 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T17:09:30.286+08:00  INFO 27657 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 87 ms
+2023-06-13T17:09:30.291+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-06-13T17:09:30.294+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T17:09:30.294+08:00  INFO 27657 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-06-13T17:09:30.294+08:00  INFO 27657 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T17:09:30.334+08:00  INFO 27657 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T17:09:30.336+08:00  INFO 27657 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T17:09:30.338+08:00  INFO 27657 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 0.158 seconds (process running for 512.206)
+2023-06-13T17:09:30.338+08:00  INFO 27657 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-13T17:09:31.628+08:00  INFO 27800 --- [main] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:09:31.656+08:00  INFO 27800 --- [main] c.s.demo.GatewayApplicationTests         : Starting GatewayApplicationTests using Java 17.0.7 with PID 27800 (started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:09:31.656+08:00  INFO 27800 --- [main] c.s.demo.GatewayApplicationTests         : The following 1 profile is active: "test"
+2023-06-13T17:09:32.375+08:00  INFO 27800 --- [main] c.s.demo.GatewayApplicationTests         : Started GatewayApplicationTests in 0.937 seconds (process running for 1.536)
+2023-06-13T17:09:36.510+08:00  INFO 27657 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-06-13T17:09:36.511+08:00  INFO 27657 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-06-13T17:24:11.573+08:00  INFO 28484 --- [main] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:24:11.602+08:00  INFO 28484 --- [main] c.springboot.demo.SpringBootDemoTests    : Starting SpringBootDemoTests using Java 17.0.7 with PID 28484 (started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:24:11.603+08:00  INFO 28484 --- [main] c.springboot.demo.SpringBootDemoTests    : The following 1 profile is active: "test"
+2023-06-13T17:24:12.307+08:00  INFO 28484 --- [main] c.springboot.demo.SpringBootDemoTests    : Started SpringBootDemoTests in 0.929 seconds (process running for 1.595)
+2023-06-13T17:24:32.759+08:00  INFO 28493 --- [main] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:24:32.787+08:00  INFO 28493 --- [main] c.springboot.demo.SpringBootDemoTests    : Starting SpringBootDemoTests using Java 17.0.7 with PID 28493 (started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:24:32.788+08:00  INFO 28493 --- [main] c.springboot.demo.SpringBootDemoTests    : The following 1 profile is active: "test"
+2023-06-13T17:24:33.485+08:00  INFO 28493 --- [main] c.springboot.demo.SpringBootDemoTests    : Started SpringBootDemoTests in 0.909 seconds (process running for 1.532)
+2023-06-13T17:29:03.369+08:00  INFO 28555 --- [main] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:29:03.395+08:00  INFO 28555 --- [main] c.springboot.demo.SpringBootDemoTests    : Starting SpringBootDemoTests using Java 17.0.7 with PID 28555 (started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:29:03.396+08:00  INFO 28555 --- [main] c.springboot.demo.SpringBootDemoTests    : The following 1 profile is active: "test"
+2023-06-13T17:29:04.139+08:00  INFO 28555 --- [main] c.springboot.demo.SpringBootDemoTests    : Started SpringBootDemoTests in 0.954 seconds (process running for 1.563)
+2023-06-13T17:30:43.902+08:00  INFO 28609 --- [main] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:30:43.931+08:00  INFO 28609 --- [main] c.springboot.demo.SpringBootDemoTests    : Starting SpringBootDemoTests using Java 17.0.7 with PID 28609 (started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:30:43.931+08:00  INFO 28609 --- [main] c.springboot.demo.SpringBootDemoTests    : The following 1 profile is active: "test"
+2023-06-13T17:30:44.648+08:00  INFO 28609 --- [main] c.springboot.demo.SpringBootDemoTests    : Started SpringBootDemoTests in 0.947 seconds (process running for 1.568)
+2023-06-13T17:31:02.189+08:00  INFO 28623 --- [main] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:31:02.212+08:00  INFO 28623 --- [main] c.springboot.demo.SpringBootDemoTests    : Starting SpringBootDemoTests using Java 17.0.7 with PID 28623 (started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:31:02.212+08:00  INFO 28623 --- [main] c.springboot.demo.SpringBootDemoTests    : The following 1 profile is active: "test"
+2023-06-13T17:31:02.910+08:00  INFO 28623 --- [main] c.springboot.demo.SpringBootDemoTests    : Started SpringBootDemoTests in 0.89 seconds (process running for 1.494)
+2023-06-13T17:42:21.880+08:00  INFO 28772 --- [main] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:42:21.913+08:00  INFO 28772 --- [main] c.springboot.demo.SpringBootDemoTests    : Starting SpringBootDemoTests using Java 17.0.7 with PID 28772 (started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:42:21.914+08:00  INFO 28772 --- [main] c.springboot.demo.SpringBootDemoTests    : The following 1 profile is active: "test"
+2023-06-13T17:42:22.661+08:00  INFO 28772 --- [main] c.springboot.demo.SpringBootDemoTests    : Started SpringBootDemoTests in 0.977 seconds (process running for 2.009)
+2023-06-13T17:42:29.986+08:00  INFO 28783 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:42:30.021+08:00  INFO 28783 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 28783 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:42:30.021+08:00  INFO 28783 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T17:42:30.047+08:00  INFO 28783 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T17:42:30.047+08:00  INFO 28783 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T17:42:30.685+08:00  INFO 28783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T17:42:30.697+08:00  INFO 28783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T17:42:30.697+08:00  INFO 28783 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T17:42:30.743+08:00  INFO 28783 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T17:42:30.743+08:00  INFO 28783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 696 ms
+2023-06-13T17:42:30.763+08:00  INFO 28783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T17:42:30.913+08:00  INFO 28783 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T17:42:30.914+08:00  INFO 28783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T17:42:30.921+08:00  INFO 28783 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T17:42:31.141+08:00  INFO 28783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T17:42:31.162+08:00  INFO 28783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T17:42:31.172+08:00  INFO 28783 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.585 seconds (process running for 1.892)
+2023-06-13T17:44:58.960+08:00  INFO 28783 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T17:44:58.962+08:00  INFO 28783 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-13T17:45:00.725+08:00  INFO 28845 --- [restartedMain] o.s.boot.SpringApplication               : [32m
+  /$$$$$$   /$$$$$$  /$$$$$$$  /$$   /$$       /$$$$$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$     /$$ /$$$$$$   /$$$$$$  /$$     /$$
+ /$$__  $$ /$$__  $$| $$__  $$| $$$ | $$      |_  $$_/|__  $$__//$$__  $$ /$$__  $$|  $$   /$$//$$__  $$ /$$__  $$|  $$   /$$/
+| $$  \__/| $$  \__/| $$  \ $$| $$$$| $$        | $$     | $$  | $$  \__/| $$  \ $$ \  $$ /$$/| $$  \__/| $$  \ $$ \  $$ /$$/
+| $$      |  $$$$$$ | $$  | $$| $$ $$ $$ /$$$$$$| $$     | $$  |  $$$$$$ | $$$$$$$$  \  $$$$/ |  $$$$$$ | $$$$$$$$  \  $$$$/
+| $$       \____  $$| $$  | $$| $$  $$$$|______/| $$     | $$   \____  $$| $$__  $$   \  $$/   \____  $$| $$__  $$   \  $$/
+| $$    $$ /$$  \ $$| $$  | $$| $$\  $$$        | $$     | $$   /$$  \ $$| $$  | $$    | $$    /$$  \ $$| $$  | $$    | $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$/| $$ \  $$       /$$$$$$   | $$  |  $$$$$$/| $$  | $$    | $$   |  $$$$$$/| $$  | $$    | $$
+ \______/  \______/ |_______/ |__/  \__/      |______/   |__/   \______/ |__/  |__/    |__/    \______/ |__/  |__/    |__/
+[39m
+::Spring Boot Version: [31m (v3.1.0)[39m
+::Application Version: [31m[39m
+
+custom: ${key}
+
+2023-06-13T17:45:00.756+08:00  INFO 28845 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Starting SpringBootDemoApplication using Java 17.0.7 with PID 28845 (/Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo/target/classes started by apple in /Users/chenjujun/java-projects/Spring-Boot-Demo/Spring-Boot-Demo)
+2023-06-13T17:45:00.756+08:00  INFO 28845 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : The following 1 profile is active: "test"
+2023-06-13T17:45:00.781+08:00  INFO 28845 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-13T17:45:00.781+08:00  INFO 28845 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-13T17:45:01.388+08:00  INFO 28845 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-13T17:45:01.396+08:00  INFO 28845 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-13T17:45:01.396+08:00  INFO 28845 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-13T17:45:01.435+08:00  INFO 28845 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-13T17:45:01.435+08:00  INFO 28845 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 653 ms
+2023-06-13T17:45:01.452+08:00  INFO 28845 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-13T17:45:01.580+08:00  INFO 28845 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:./spring-boot-demo user=ROOT
+2023-06-13T17:45:01.581+08:00  INFO 28845 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-13T17:45:01.588+08:00  INFO 28845 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./spring-boot-demo'
+2023-06-13T17:45:01.812+08:00  INFO 28845 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-13T17:45:01.835+08:00  INFO 28845 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-13T17:45:01.841+08:00  INFO 28845 --- [restartedMain] c.s.demo.SpringBootDemoApplication       : Started SpringBootDemoApplication in 1.485 seconds (process running for 1.803)
+2023-06-13T17:54:54.578+08:00  INFO 28845 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-13T17:54:54.581+08:00  INFO 28845 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
