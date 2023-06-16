@@ -1,6 +1,7 @@
 package com.springboot.demo;
 
 import com.springboot.demo.banner.CustomBanner;
+import com.springboot.demo.failureAnalyzer.exception.MyException;
 import com.springboot.demo.hook.MyApplicationHook;
 import com.springboot.demo.initializer.MyInitializer2;
 import com.springboot.demo.listeners.MyApplicationListener;
