@@ -30,6 +30,8 @@ spring:
 logging:
   file:
     path: log
+#  level:
+#    org.springframework: debug
 
 me: 4444
 

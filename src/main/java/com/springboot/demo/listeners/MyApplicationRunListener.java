@@ -1,6 +1,8 @@
 package com.springboot.demo.listeners;
 
 import com.springboot.demo.failureAnalyzer.exception.MyException;
+import com.springboot.demo.failureAnalyzer.exception.MyException3;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ConfigurableBootstrapContext;
 import org.springframework.boot.SpringApplicationRunListener;
@@ -22,10 +24,12 @@ public class MyApplicationRunListener implements SpringApplicationRunListener {
         System.out.println("环境已准备完毕");
     }
 
+    @SneakyThrows
     @Override
     public void contextPrepared(ConfigurableApplicationContext context) {
         System.out.println("在创建和准备ApplicationContext之后，但在加载源之前调用");
-        throw new MyException();
+//        throw new MyException();
+//        throw new MyException3();
     }
 
     @Override

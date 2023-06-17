@@ -8,6 +8,7 @@ import com.springboot.demo.listeners.MyApplicationListener;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.PropertySource;
 
 import javax.swing.*;
@@ -33,7 +34,12 @@ public class SpringBootDemoApplication {
         properties.setProperty("me", "123456");
         springApplication.setDefaultProperties(properties);
 
-        springApplication.run(args);
+        ConfigurableApplicationContext context = springApplication.run(args);
+        //关闭上下文
+        context.close();
+        //优雅关机
+//        Runtime.getRuntime().exit(999);
+//        System.exit(999);
     }
 
 }
