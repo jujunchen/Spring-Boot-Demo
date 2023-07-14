@@ -5,4 +5,4 @@ org.springframework.boot.SpringApplicationRunListener=com.springboot.demo.listen
 
 
 #FailureAnalyzer
-org.springframework.boot.diagnostics.FailureAnalyzer=com.springboot.demo.failureAnalyzer.MyFailureAnalyzer
+#org.springframework.boot.diagnostics.FailureAnalyzer=com.springboot.demo.failureAnalyzer.MyFailureAnalyzer
